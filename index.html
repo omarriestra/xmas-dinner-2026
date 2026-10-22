@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b16">
+  <meta name="description" content="Has interrumpido a Elf en su refugio. Ayúdale a organizar la Navidad de NSGCS 2026.">
+  <title>Refugio de Elf · Cena de Navidad 2026</title>
+  <link rel="preload" as="image" href="/xmas-dinner-2026/assets/refuge-wide-B4VB-ods.png" media="(min-width: 701px)">
+  <link rel="preload" as="image" href="/xmas-dinner-2026/assets/refuge-mobile-C6jYkS9E.png" media="(max-width: 700px)">
+  <link rel="preload" as="image" href="/xmas-dinner-2026/assets/elf-DKNY4160.png">
+  <script type="module" crossorigin src="/xmas-dinner-2026/assets/index-Bp-jgVwp.js"></script>
+  <link rel="stylesheet" crossorigin href="/xmas-dinner-2026/assets/index-7xCGl6b0.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <main id="contenido">
+    <section class="refuge" id="inicio" aria-labelledby="scene-title">
+      <div class="scene-column">
+        <div class="room" id="room" data-lights="on">
+          <picture class="backdrop">
+            <source media="(max-width: 700px)" srcset="/xmas-dinner-2026/assets/refuge-mobile-C6jYkS9E.png">
+            <img class="room-backdrop" src="/xmas-dinner-2026/assets/refuge-wide-B4VB-ods.png" alt="Refugio de madera en una noche nevada, con un árbol navideño y una chimenea encendida." fetchpriority="high">
+          </picture>
+          <span class="window-snow" aria-hidden="true"></span>
+          <span class="firelight" aria-hidden="true"></span>
+          <span class="tree-shadow" aria-hidden="true"></span>
+          <span class="tree-halo" aria-hidden="true"></span>
+          <span class="tree-lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <img class="elf-art" src="/xmas-dinner-2026/assets/elf-DKNY4160.png" alt="Elf, una criatura verde y peluda con chaleco gastado y gesto de haber sido interrumpido." width="1024" height="1536" fetchpriority="high">
+          <p class="elf-fallback" id="elf-fallback" hidden>La ilustración de Elf no se ha cargado.</p>
+          <span class="gregorio-figure" aria-hidden="true">
+            <img class="gregorio-art" src="/xmas-dinner-2026/assets/gregorio-Djspy0Jj.png" alt="" width="1312" height="1199">
+            <img class="gregorio-leaves" src="/xmas-dinner-2026/assets/gregorio-Djspy0Jj.png" alt="" width="1312" height="1199">
+          </span>
+
+          <div class="scene-copy">
+            <h1 id="scene-title">¿Quién te dejó entrar?</h1>
+            <p class="scene-description">Me han encargado organizar la cena de Navidad del equipo; a Omar le daba pereza... Cuéntame cuáles son tus preferencias y no se te ocurra tocar nada.</p>
+            <div class="entry-actions">
+              <button class="cta elf-action" type="button" disabled>Enlace a Elf pendiente</button>
+              <p class="access-note" data-access-note>Necesitarás acceder con tu cuenta corporativa.</p>
+              <noscript><p class="access-note">Para abrir Elf necesitas JavaScript. Responder a sus preguntas no confirma asistencia; fecha, menú y local siguen pendientes.</p></noscript>
+            </div>
+            <button class="info-trigger" id="know-more-open" type="button" aria-haspopup="dialog" aria-controls="know-more" aria-expanded="false" hidden>Detalles del evento <span aria-hidden="true">↗</span></button>
+          </div>
+
+          <p class="reaction is-visible" id="elf-reaction">Había conseguido cinco minutos de silencio.</p>
+
+          <button class="scene-object lights-control" id="lights-control" type="button" aria-pressed="true" aria-label="Apagar las luces del árbol" hidden><span class="object-label">Luces del árbol</span></button>
+          <button class="scene-object gregorio-control" id="gregorio-control" type="button" aria-label="Preguntar a Gregorio, la planta en maceta" hidden><span class="object-label">Gregorio</span></button>
+          <button class="scene-object letter-control" id="letter-control" type="button" aria-expanded="false" aria-controls="resignation-note" aria-label="Abrir la carta de dimisión que tiene Elf en la mano" hidden>
+            <span class="object-label">Carta de dimisión</span>
+          </button>
+          <div class="letter-note" id="resignation-note" role="dialog" aria-labelledby="note-title" hidden>
+            <button class="note-close" id="note-close" type="button" aria-label="Cerrar la carta">×</button>
+            <p class="note-label" id="note-title">CARTA DE DIMISIÓN</p>
+            <p>Solicitud número 14. Rechazada por Guillermo, del Departamento de Espíritu Navideño. Voy a recurrir...</p>
+            <span>— E.</span>
+          </div>
+          <span class="sr-only" id="elf-announcement" role="status" aria-live="polite" aria-atomic="true"></span>
+
+          <div class="scene-controls">
+            <audio id="background-music" src="./audio/christmas-background.mp3" preload="auto" loop></audio>
+            <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Reproducir música de fondo" hidden>Música</button>
+            <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Activar efectos de sonido" hidden>Sonido</button>
+            <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar efectos" hidden>Pausar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <dialog class="planning-scene" id="know-more" aria-labelledby="planning-title">
+      <img class="planning-backdrop" src="./planning-room.png" alt="" loading="lazy" aria-hidden="true">
+      <div class="planning-shade" aria-hidden="true"></div>
+      <img class="planning-elf" src="/xmas-dinner-2026/assets/elf-DKNY4160.png" alt="" aria-hidden="true" width="1024" height="1536">
+      <button class="planning-close" id="close-know-more" type="button" autofocus><span aria-hidden="true">←</span> Volver al refugio</button>
+      <div class="planning-layout">
+        <section class="planning-board" aria-labelledby="planning-title">
+          <header class="planning-header">
+            <h2 id="planning-title">El plan sigue en blanco...</h2>
+            <p class="planning-lead">Todavía estoy reuniendo las piezas... Esto es lo que sabemos de momento: nada.</p>
+          </header>
+          <nav class="planning-options" aria-label="Expedientes del evento">
+            <button class="planning-option" type="button" data-plan-choice="event-date" aria-controls="event-date" aria-pressed="false"><span>CUÁNDO</span><strong>Día y hora</strong></button>
+            <button class="planning-option" type="button" data-plan-choice="event-menu" aria-controls="event-menu" aria-pressed="false"><span>QUÉ COMEMOS</span><strong>Menú y precio</strong></button>
+            <button class="planning-option" type="button" data-plan-choice="event-venue" aria-controls="event-venue" aria-pressed="false"><span>DÓNDE</span><strong>Lugar y mapa</strong></button>
+          </nav>
+          <div class="planning-details" id="planning-details" aria-live="polite" aria-atomic="true">
+            <p class="planning-prompt" id="planning-prompt">Día, menú y lugar siguen por decidir.</p>
+            <article class="planning-card" id="event-date" tabindex="-1" hidden>
+              <span class="planning-state">Por confirmar</span>
+              <h3>Día y hora</h3>
+              <p>Fecha <strong data-config="finalDate">pendiente</strong></p>
+              <p>Hora <strong data-config="finalTime">pendiente</strong></p>
+            </article>
+            <article class="planning-card" id="event-menu" tabindex="-1" hidden>
+              <span class="planning-state">Por confirmar</span>
+              <h3>Menú y precio</h3>
+              <p>Menú <strong data-config="menu">pendiente</strong></p>
+              <p>Precio <strong data-config="menuPrice">pendiente</strong></p>
+              <p>Aportación <strong data-config="participantContribution">pendiente</strong></p>
+            </article>
+            <article class="planning-card planning-card-place" id="event-venue" tabindex="-1" hidden>
+              <span class="planning-state">Por confirmar</span>
+              <h3>Lugar y mapa</h3>
+              <p>Local <strong data-config="venue">pendiente</strong></p>
+              <div class="planning-map" aria-label="Espacio reservado para el mapa"><span>El mapa aparecerá aquí cuando se confirme el local.</span></div>
+            </article>
+          </div>
+          <footer class="planning-footer">
+            <p>Responder a Elf comparte tus preferencias; <strong>no confirma asistencia ni reserva plaza</strong>. Necesitarás iniciar sesión con tu cuenta corporativa.</p>
+            <p>Si algo no funciona, contacta con Omar; a mí no me molestes.</p>
+          </footer>
+        </section>
+      </div>
+    </dialog>
+  </main>
+</body>
+</html>
